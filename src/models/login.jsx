@@ -6,7 +6,9 @@ import Col from 'react-bootstrap/Col';
 import Carousel from 'react-bootstrap/Carousel';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-//import react from '../assets/react'
+import Imagen1 from '../assets/imagen1.jpg';
+import Imagen3 from '../assets/imagen3.jpg';
+import Imagen4 from '../assets/imagen4.jpg';
 
 export default function Login() {
     return(
@@ -28,7 +30,7 @@ export default function Login() {
              <Carousel.Item>
                <img
                   className="d-block w-100"
-                  src="holder.js/800x400?text=First slide&bg=373940"
+                  src={Imagen3}
                   alt="First slide"
                />
                <Carousel.Caption>
@@ -39,7 +41,7 @@ export default function Login() {
              <Carousel.Item>
                <img
                   className="d-block w-100"
-                  src="holder.js/800x400?text=Second slide&bg=282c34"
+                  src={Imagen1}
                   alt="Second slide"
                />
                <Carousel.Caption>
@@ -48,7 +50,11 @@ export default function Login() {
                </Carousel.Caption>
              </Carousel.Item>
              <Carousel.Item>
-     
+             <img
+                  className="d-block w-100"
+                  src={Imagen4}
+                  alt="First slide"
+               />       
 
                 <Carousel.Caption>
                  <h3>Third slide label</h3>
@@ -58,10 +64,15 @@ export default function Login() {
            </Carousel>
           </Col>
           <Col sm={4}>
+            <br></br>
             <Form>
+            <Form.Text className="text-center">
+                <h1>LOGIN</h1> 
+               </Form.Text>
+               <br></br>
              <Form.Group className="mb-3" controlId="formBasicEmail">
-               <Form.Label>Email address</Form.Label>
-               <Form.Control type="email" placeholder="Enter email" />
+               <Form.Label>Usuario</Form.Label>
+               <Form.Control type="text" placeholder="Ingrese su Usuario" />
                <Form.Text className="text-muted">
                  We'll never share your email with anyone else.
                </Form.Text>
