@@ -7,88 +7,70 @@ import Carousel from 'react-bootstrap/Carousel';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Imagen1 from '../assets/imagen1.jpg';
-import Imagen3 from '../assets/imagen3.jpg';
+import Imagen5 from '../assets/imagen5.jpg';
 import Imagen4 from '../assets/imagen4.jpg';
 
 export default function Login() {
     return(
        <>
-         <Navbar bg="primary" variant="dark">
-           <Container>
-               <Navbar.Brand href="#home">InstaYa Envios</Navbar.Brand>
+         <Row>
+           <Navbar bg="primary" variant="dark">
+             <Container>
+               <Navbar.Brand href="/"><h4>InstaYa Envios</h4></Navbar.Brand>
                <Nav className="ms-auto">
                   <div className="bg-light vr" />
-                  <Nav.Link href="#register">Registro</Nav.Link>
+                  <Nav.Link href="/register"><h5>Register</h5></Nav.Link>
                </Nav>               
-           </Container>           
-       </Navbar>
-       <br></br>
-       <Container>
-          <Row>
-            <Col sm={8}>
-            <Carousel>
-             <Carousel.Item>
-               <img
-                  className="d-block w-100"
-                  src={Imagen3}
-                  alt="First slide"
-               />
-               <Carousel.Caption>
-                 <h3>First slide label</h3>
-                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-               </Carousel.Caption>
-             </Carousel.Item>
-             <Carousel.Item>
-               <img
-                  className="d-block w-100"
-                  src={Imagen1}
-                  alt="Second slide"
-               />
-               <Carousel.Caption>
-                  <h3>Second slide label</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-               </Carousel.Caption>
-             </Carousel.Item>
-             <Carousel.Item>
-             <img
-                  className="d-block w-100"
-                  src={Imagen4}
-                  alt="First slide"
-               />       
-
-                <Carousel.Caption>
-                 <h3>Third slide label</h3>
-                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-               </Carousel.Caption>
-             </Carousel.Item>
-           </Carousel>
-          </Col>
-          <Col sm={4}>
-            <br></br>
-            <Form>
-            <Form.Text className="text-center">
-                <h1>LOGIN</h1> 
-               </Form.Text>
-               <br></br>
-             <Form.Group className="mb-3" controlId="formBasicEmail">
-               <Form.Label>Usuario</Form.Label>
-               <Form.Control type="text" placeholder="Ingrese su Usuario" />
-               <Form.Text className="text-muted">
-                 We'll never share your email with anyone else.
-               </Form.Text>
-             </Form.Group>
-
-             <Form.Group className="mb-3" controlId="formBasicPassword">
-               <Form.Label>Password</Form.Label>
-               <Form.Control type="password" placeholder="Password" />
-             </Form.Group>
-             <Button variant="primary" type="submit">
-               Submit
-             </Button>
-            </Form>
-          </Col>
-       </Row>
-       </Container>
+             </Container>           
+           </Navbar>
+           <Col sm={8}>
+             <Carousel>
+               <Carousel.Item>
+                 <img className="d-block w-100" src={Imagen5} alt="First slide"/>
+                 <Carousel.Caption>
+                   <h3>First slide label</h3>
+                   <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                 </Carousel.Caption>
+               </Carousel.Item>
+               <Carousel.Item>
+                 <img className="d-block w-100" src={Imagen1} alt="Second slide"/>
+                 <Carousel.Caption>
+                   <h3>Second slide label</h3>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                 </Carousel.Caption>
+               </Carousel.Item>
+               <Carousel.Item>
+                 <img className="d-block w-100" src={Imagen4} alt="First slide"/>       
+                 <Carousel.Caption>
+                   <h3>Third slide label</h3>
+                   <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                 </Carousel.Caption>
+               </Carousel.Item>
+             </Carousel>
+           </Col>
+           <Col sm={4}>
+             <Container>
+               <br></br><br></br>
+               <Form>
+                 <Form.Text className="text-center">
+                   <h1>LOGIN</h1> 
+                 </Form.Text>
+                 <br></br><br></br>
+                 <Form.Group className="mb-3" controlId="formBasicEmail">
+                   <Form.Label><h5>Usuario</h5></Form.Label>
+                   <Form.Control type="text" size="lg" placeholder="Ingrese su Usuario" />
+                 </Form.Group>
+                 <Form.Group className="mb-3" controlId="formBasicPassword">
+                   <Form.Label><h5>Password</h5></Form.Label>
+                   <Form.Control type="password" size="lg" placeholder="Password" />
+                 </Form.Group>
+                 <Button className="col-md-4 text-center" size="lg" variant="primary" type="submit">
+                   Ingresar
+                 </Button>
+               </Form>
+             </Container>
+           </Col>
+         </Row>         
        </>
     )
      
