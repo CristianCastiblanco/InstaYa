@@ -24,7 +24,7 @@ export default function Register() {
          <br></br><br></br><br></br>
          <Container>
            <Row className="justify-content-md-center">
-             <Col className="bg-primary gx-5 rounded rounded-xxl" lg="6">
+             <Col className="bg-primary opacity-75 gx-5 rounded rounded-xxl" lg="6">
                <Form>
                   <br></br><br></br><br></br>
                   <Form.Text className="text-center text-white">
@@ -55,7 +55,7 @@ export default function Register() {
                       <Form.Control type="password2" size="lg" placeholder="Confirme su Password" required />
                     </Col>
                   </Form.Group><br></br><br></br>
-                  <Button className="col-md-4 content-center" size="lg" variant="dark" type="submit">
+                  <Button className="col-md-4 content-center" size="lg" variant="dark opacity-90" type="submit">
                    Confirmar
                   </Button><br></br><br></br>
                </Form>  <br></br>  

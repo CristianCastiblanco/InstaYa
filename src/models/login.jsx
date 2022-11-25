@@ -52,19 +52,19 @@ export default function Login() {
              <Container>
                <br></br><br></br>
                <Form>
-                 <Form.Text className="text-center">
+                 <Form.Text className="text-center text-white">
                    <h1>LOGIN</h1> 
                  </Form.Text>
                  <br></br><br></br>
                  <Form.Group className="mb-3" controlId="formBasicEmail">
-                   <Form.Label><h5>Usuario</h5></Form.Label>
+                   <Form.Label><h5 className="text-white">Usuario</h5></Form.Label>
                    <Form.Control type="text" size="lg" placeholder="Ingrese su Usuario" />
                  </Form.Group>
                  <Form.Group className="mb-3" controlId="formBasicPassword">
-                   <Form.Label><h5>Password</h5></Form.Label>
+                   <Form.Label><h5 className="text-white">Password</h5></Form.Label>
                    <Form.Control type="password" size="lg" placeholder="Password" />
                  </Form.Group>
-                 <Button className="col-md-4 text-center" size="lg" variant="primary" type="submit">
+                 <Button className="col-md-4 text-center" size="lg" variant="primary opacity-75" type="submit">
                    Ingresar
                  </Button>
                </Form>
