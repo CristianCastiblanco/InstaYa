@@ -105,7 +105,7 @@ export default function CrearOrden() {
              <Col sm={3} className="gx-5"><br></br><br></br><br></br>
                <Container className="bg-primary opacity-75 gx-5 rounded rounded-xxl">
                   <Form.Text className="text-center text-white">
-                    <h3>Dimensiones Mercancia</h3> 
+                    <h3>Dimensiones Mercancía</h3> 
                   </Form.Text><br></br>
                   <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
                     <Form.Label className="text-white" column sm="3"><h5>Ancho</h5></Form.Label>
@@ -130,15 +130,43 @@ export default function CrearOrden() {
                     <Col sm="9">
                       <Form.Control type="text" size="sm" placeholder="Ingrese Peso de la Caja" required />
                     </Col>
-                  </Form.Group><br></br><br></br>
+                  </Form.Group>
+                  <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
+                    <Form.Label className="text-white" column sm="3"><h5>Delicado</h5></Form.Label>
+                    <Col sm="9">
+                      {['checkbox'].map((type) => (
+                       <div key={`inline-${type}`} className="mb-3 text-white" size="lg">
+                         <Form.Check inline label="Si" name="group1" type={type} id={`inline-${type}-1`} />
+                         <Form.Check inline label="No" name="group1" type={type} id={`inline-${type}-2`} />          
+                       </div>
+                      ))}
+                    </Col>
+                  </Form.Group>
+                  <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
+                    <Form.Label className="text-white" column sm="3"><h5>Código</h5></Form.Label>
+                    <Col sm="9">
+                      <Form.Control type="text" size="sm" placeholder="Su código de envío es" />
+                    </Col>
+                  </Form.Group>
+                  <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
+                    <Form.Label className="text-white" column sm="3"><h5>Estado</h5></Form.Label>
+                    <Col sm="9">
+                     <Form.Select size="sm">
+                      <option>Estado del envío</option>
+                      <option value="Guardado">Guardado</option>
+                      <option value="Cumplido">Cumplido</option>
+                      <option value="Cancelado">Cancelado</option>
+                     </Form.Select>
+                    </Col>
+                  </Form.Group>
+                  <br></br><br></br>
                   <Button className="col-md-4 content-center" size="lg" variant="dark opacity-90" type="submit">
-                   Confirmar
+                     Crear Orden
                   </Button><br></br><br></br>
-                  </Container>
+                </Container>
              </Col> 
-             </Row>
-               </Form><br></br> 
-               
+           </Row>
+         </Form><br></br> 
        </>    
   );
      
