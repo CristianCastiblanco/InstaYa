@@ -57,7 +57,7 @@ export default function Home() {
                      <td>@mdo</td>
                      <td>@mdo</td>
                      <td>
-                      <Button className="col-md-7" size="sm" variant="danger" type="submit">
+                      <Button className="col-md-7" href="/actualizarOrden" size="sm" variant="danger" type="submit">
                        Editar
                      </Button></td>
                    </tr>
@@ -70,7 +70,7 @@ export default function Home() {
                      <td>@mdo</td>
                      <td>@mdo</td>
                      <td>
-                      <Button className="col-md-7" size="sm" variant="danger" type="submit">
+                      <Button className="col-md-7" href="/actualizarOrden" size="sm" variant="danger" type="submit">
                         Editar
                       </Button></td>
                    </tr>
@@ -83,7 +83,7 @@ export default function Home() {
                      <td>@mdo</td>
                      <td>@mdo</td>
                      <td>
-                      <Button className="col-md-7" size="sm" variant="danger" type="submit">
+                      <Button className="col-md-7" href="/actualizarOrden" size="sm" variant="danger" type="submit">
                         Editar
                       </Button></td>
                    </tr>
