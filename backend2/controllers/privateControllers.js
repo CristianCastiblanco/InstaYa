@@ -10,7 +10,7 @@ const OrderService = async(req, res)=> {
         if(req.body.nomDest){
             
             const newOrder = new Order({
-                username: req.body.username,
+                
                 fecha: req.body.fecha,
                 dirRem: req.body.dirRem,
                 ciuRem: req.body.ciuRem,

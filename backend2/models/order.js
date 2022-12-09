@@ -7,7 +7,7 @@ const schemaOrder = new mongoose.Schema({
     ciuRem:{type: String, required: true,},
     telRem:{ type: Number, required: true,},
     nomRem:{type: String, required: true,},
-    docRem:{type: String, required: true,},
+    docRem:{type: Number, required: true,},
     dirDest:{type: String, required: true,},
     ciuDest:{type: String, required: true,},
     telDest:{ type: Number, required: true,},
