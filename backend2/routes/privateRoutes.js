@@ -3,7 +3,7 @@ const router = express.Router();
 const checkAuth = require("../middlewares/checkAuth");
 const {Mostrar, OrderService} = require("../controllers/privateControllers");
 
-router.post("/order", OrderService);
+router.post("/order", checkAuth, OrderService);
 
 router.get("/mostrardatos", checkAuth, Mostrar);
 

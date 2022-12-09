@@ -39,9 +39,17 @@ const OrderService = async(req, res)=> {
     }
 };
 
-
+//Select todos
 const Mostrar = async (req, res) => {
-    res.json({message:"datos privados"});
+    try{
+        const order = await Order.find();
+       
+
+        return res.status(200).json(order);
+
+    }catch(e){
+        return res.status(500).json({message: e.message});                    
+    }
 };
 
 module.exports = {Mostrar, OrderService};
